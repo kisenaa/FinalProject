@@ -1,0 +1,22 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: 
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
+      - '!main'     # excludes main
+
+jobs:
+  build:
+
+    runs-on: [ubuntu-20.04]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: betwo/github-setup-catkin@v1.3.0
+      with:
+        ros-version: 'noetic'
+        workspace: '$GITHUB_WORKSPACE'
+    - run: catkin_make_isolated
