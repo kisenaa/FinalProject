@@ -1,10 +1,10 @@
 # FinalProject
 Johannes Daniswara Pratama - 5025221276 - Teknik Informatika
 
-Code : Python
-Main code : Aruco Tag (april tag) detection, colour detection for landing, dan Hand Tracking / Hand counter detection
+#Main code :
+Aruco Tag (april tag) detection, colour detection for landing, dan Hand Tracking / Hand counter detection
 
-Jika ada error opencv: 
+#Jika ada error opencv: 
 pip install opencv-python==4.4.0.46
 pip install opencv-contrib-python==4.4.0.46
 
