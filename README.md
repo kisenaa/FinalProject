@@ -6,6 +6,7 @@ Aruco tag (APRIL-TAG) detection, colour detection for landing, dan Hand Tracking
 
 # Jika ada error opencv: 
 pip install opencv-python==4.4.0.46
+
 pip install opencv-contrib-python==4.4.0.46
 
 List dari april tag ada di file AprilTag-tag36h11-1.pdf
